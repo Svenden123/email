@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Заголовок статьи{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h3>{{context.title}}</h3>
+            <img src="/media/{{context.image}}">
+            <p>{{context.text}}</p>
+        </div>
+    </div>
+{% endblock %}
